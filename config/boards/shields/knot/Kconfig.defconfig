@@ -1,0 +1,9 @@
+if SHIELD_KNOT
+
+config ZMK_KEYBOARD_NAME
+    default "knot"
+
+endif
+
+config SPI
+	default y

@@ -1,0 +1,9 @@
+file_format: "1"
+id: knot
+name: knot
+type: shield
+url: https://github.com/hsgw/zmk-config-knot/
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+  - pointer

@@ -18,3 +18,8 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: xiao_ble
+    shield: knot
+  - board: xiao_ble
+    shield: settings_reset
