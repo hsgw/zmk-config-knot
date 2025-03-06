@@ -22,8 +22,8 @@
         rows = <2>;
         columns = <2>;
         map = <
-            RC(0,0) RC(0,1)
-            RC(0,2) RC(0,3)
+            RC(0,3) RC(0,2)
+            RC(0,1) RC(0,0)
         >;
     };
 };
@@ -64,7 +64,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <800>;
+        cpi = <1200>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;

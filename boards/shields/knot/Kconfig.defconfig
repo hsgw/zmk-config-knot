@@ -1,9 +1,18 @@
 if SHIELD_KNOT
 
-config ZMK_KEYBOARD_NAME
-    default "knot"
+    config ZMK_KEYBOARD_NAME
+        default "knot"
+
+    config ZMK_POINTING
+        default y
+
+    config SPI
+        default y
+
+    config PMW3610
+        default y
+
+    config INPUT
+        default y
 
 endif
-
-config SPI
-	default y
