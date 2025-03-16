@@ -1,45 +1,13 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/input_transform.h>
-#include <input/processors.dtsi>
 
 / {
-  trackball_listener {
-    scroller {
-        layers = <1>;
-        input-processors = <
-          &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
-          &zip_x_scaler 0 50  // disable x scroller
-          &zip_y_scaler 1 50
-          &zip_xy_to_scroll_mapper
-        >;
-    };
-  };
-
-  combos {
-    compatible = "zmk,combos";
-    combo_bt_clear_all {
-      timeout-ms = <50>;
-      key-positions = <0 1 2 3>;
-      bindings = <&bt BT_CLR_ALL>;
-    };
-  };
-
   keymap {
     compatible = "zmk,keymap";
     default_layer {
       bindings = <
-        &mkp MB1 &mo 1
-        &mkp MB2 &mkp MB3
-      >;
-    };
-
-    1 {
-      bindings = <
-        &msc SCRL_UP   &trans
-        &msc SCRL_DOWN &trans
+        &kp N1 &kp N2
+        &kp N3 &kp N4
       >;
     };
   };
